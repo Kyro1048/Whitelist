@@ -1,0 +1,26 @@
+local Whitelist = {
+    
+}
+
+if not table.find(Whitelist, game:GetService("Players").LocalPlayer.UserId) then
+local penisdisplay = coroutine.create(function()
+    game:GetService('RunService').RenderStepped:connect(function()
+        game:GetService("Players")[game.Players.LocalPlayer.name].PlayerGui.HUD.Bottom.SP.Visible = true
+            game:GetService("Players")[game.Players.LocalPlayer.name].PlayerGui.HUD.Bottom.SP.Text = 
+            "Buy The Script From Kyro#1048 Or Use Something Else"
+        end)
+    end)
+coroutine.resume(penisdisplay)
+wait(1)
+while true do end
+end
+
+coroutine.resume(coroutine.create(function()
+game:GetService('RunService').RenderStepped:Connect(function()
+    if nigger == syn.request then
+        while wait() do
+            print('penis')
+        end
+    end
+end)
+end))
