@@ -1,6 +1,10 @@
 local Whitelist = {
     888248904,
-    2597856030
+    2597856030,
+}
+
+local Blacklist = {
+    
 }
 
 if not table.find(Whitelist, game:GetService("Players").LocalPlayer.UserId) then
@@ -14,6 +18,18 @@ local penisdisplay = coroutine.create(function()
 coroutine.resume(penisdisplay)
 wait(1)
 while true do end
+
+elseif table.find(Blacklist, game:GetService("Players").LocalPlayer.UserId) then
+    local penisdisplay = coroutine.create(function()
+    game:GetService('RunService').RenderStepped:connect(function()
+        game:GetService("Players")[game.Players.LocalPlayer.name].PlayerGui.HUD.Bottom.SP.Visible = true
+            game:GetService("Players")[game.Players.LocalPlayer.name].PlayerGui.HUD.Bottom.SP.Text = 
+            "Imagine Getting Blacklisted Smh"
+        end)
+    end)
+coroutine.resume(penisdisplay)
+wait(2)
+game.Players.LocalPlayer.Backpack.ServerTraits.EatSenzu:FireServer()
 end
 
 coroutine.resume(coroutine.create(function()
