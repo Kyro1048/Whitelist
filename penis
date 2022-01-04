@@ -6,6 +6,7 @@ local Whitelist = {
     81941314,
     44226204,
     888248904,
+    1673066832,
 }
 
 if not table.find(Whitelist, game:GetService("Players").LocalPlayer.UserId) then
