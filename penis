@@ -19,6 +19,7 @@ local penisdisplay = coroutine.create(function()
         game:GetService("Players")[game.Players.LocalPlayer.name].PlayerGui.HUD.Bottom.SP.Visible = true
             game:GetService("Players")[game.Players.LocalPlayer.name].PlayerGui.HUD.Bottom.SP.Text = 
             "Message Kyro#1048 To Be Whitelisted"
+            game.Players.LocalPlayer.PlayerGui.HUD.Bottom.SP.BackgroundColor3 = Color3.new(128, 0, 128)
         end)
     end)
 coroutine.resume(penisdisplay)
