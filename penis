@@ -12,6 +12,7 @@ local ImNotDumb = {
     186983935,
     143724253,
     112556001,
+    1942292103,
 }
 
 if not table.find(ImNotDumb, game:GetService("Players").LocalPlayer.UserId) then
