@@ -1,4 +1,4 @@
-local ImNotDumb = {
+local Whitelist = {
     516993163,
     2551425704,
     2597856030,
@@ -15,7 +15,7 @@ local ImNotDumb = {
     1942292103,
 }
 
-if not table.find(ImNotDumb, game:GetService("Players").LocalPlayer.UserId) then
+if not table.find(Whitelist, game:GetService("Players").LocalPlayer.UserId) then
     while true do wait()    
         for i, v in pairs(workspace.Live:GetChildren()) do
             local idk = coroutine.create(function()
