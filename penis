@@ -13,82 +13,21 @@ local ImNotDumb = {
     143724253,
     112556001,
 }
-local Blacklist = {
 
-}
 if not table.find(ImNotDumb, game:GetService("Players").LocalPlayer.UserId) then
-    if not table.find(Whitelist, game:GetService("Players").LocalPlayer.UserId) then
-local penisdisplay = coroutine.create(function()
-    game:GetService('RunService').RenderStepped:connect(function()
-        game:GetService("Players")[game.Players.LocalPlayer.name].PlayerGui.HUD.Bottom.SP.Visible = true
-            game:GetService("Players")[game.Players.LocalPlayer.name].PlayerGui.HUD.Bottom.SP.Text = 
-            "Message Kyro#1048 To Be Whitelisted"
-            game.Players.LocalPlayer.PlayerGui.HUD.Bottom.SP.BackgroundColor3 = Color3.new(128, 0, 128)
-        end)
-    end)
-coroutine.resume(penisdisplay)
-wait(1)
-while wait() do
-c = script:Clone()
-c.Parent = game.Lighting
-s = Instance.new("Sky")
-s.Name = "loltroll"
-s.SkyboxBk = "http://www.roblox.com/asset/?id=62866150"
-s.SkyboxDn = "http://www.roblox.com/asset/?id=62866150"
-s.SkyboxFt = "http://www.roblox.com/asset/?id=62866150"
-s.SkyboxLf = "http://www.roblox.com/asset/?id=62866150"
-s.SkyboxRt = "http://www.roblox.com/asset/?id=62866150"
-s.SkyboxUp = "http://www.roblox.com/asset/?id=62866150"
-s.Parent = game.Lighting
- 
-while true do
-wait(0.225555)
-t = game.Teams:GetChildren()
-for i = 1, #t do
-if t[i] == true then
-t[i].Name = math.random()
-end
-end
-p = game.Players:GetChildren()
-for i = 1, #p do
-o = p[i].Character:GetChildren()
-for i = 1, #o do
-if o[i].ClassName == "Part" then
-q = Instance.new("SpecialMesh", o[i])
-q.MeshType = math.random(1,11)
-end
-end
-end
-w = game.Workspace:GetChildren()
-for i = 1, #w do
-if w[i].ClassName == "Part" then
-m = Instance.new("SpecialMesh", w[i])
-m.MeshType = math.random(1,11)
-elseif w[i].ClassName == "Model" then
-mo = w[i]:GetChildren()
-for i = 1, #mo do
-if mo[i].ClassName == "Part" then
-m = Instance.new("SpecialMesh", w[i])
-m.MeshType = math.random(1,11)
-end
-end
-end
-end
-end
-end
-end
-end
-
-if table.find(Blacklist, game:GetService("Players").LocalPlayer.UserId) then
-    print("Your Blacklisted, goodbye lmao")
-    wait(1)
-    game.Players.LocalPlayer.Backpack.ServerTraits.Input:FireServer({"md"}, CFrame.new())
-    game:GetService('TeleportService'):Teleport(536102540, LocalPlayer)
-end
-coroutine.resume(coroutine.create(function()
-game:GetService('RunService').RenderStepped:Connect(function()
-    if nigger == syn.request then
-        game.Players.LocalPlayer.Backpack.ServerTraits.Input:FireServer({'md'})
+    while true do wait()    
+        for i, v in pairs(workspace.Live:GetChildren()) do
+            local idk = coroutine.create(function()
+                game:GetService('RunService').RenderStepped:connect(function()
+                    game.Players.LocalPlayer.PlayerGui.HUD.Bottom.SP.Visible = true
+                        game.Players.LocalPlayer.PlayerGui.HUD.Bottom.SP.Text = 
+                            "Message Kyro#1048 To Be Whitelisted, Also Might Want To Rejoin Cuz Ur Getting Wiped In 15 Seconds"
+                        game.Players.LocalPlayer.PlayerGui.HUD.Bottom.SP.BackgroundColor3 = Color3.new(128, 0, 128)
+                    end)
+                end)
+            coroutine.resume(idk)
+        end
     end
-end)
-end))
+        wait(15)
+    game.Players.LocalPlayer.Backpack.ServerTraits.EatSenzu:FireServer()
+end
